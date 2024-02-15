@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rush</title>
+    <!-- BOOTSTRAP LINK -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    
+    <!-- FONT AWESOME LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!--CSS LINK  -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- SWIPER JS LINK -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- GOOGLE ICON LINK -->
+    <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- ION ICON -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <!--AOS LINKS  -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg text-light pt-3 w-100">
+      <div class="container">
+        <a class="navbar-brand h1 text-light" href="#">RUSH</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 fs-5 mb-lg-0">
+            <li class="nav-item">
+              <a class=" nav-link text-light active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class=" nav-link text-light" href="addtocart.html">Collection</a>
+            </li>
+            <li class="nav-item">
+              <a class=" nav-link text-light" href="#about">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class=" nav-link text-light" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              id="searchInput"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-light"
+              id="searchButton"
+              type="submit"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- HERO SECTION -->
+    <section class="hero-section" data-aos="fade-up" data-aos-duration="3000">
+      <div class="hero-section-text h-100">
+        <div class="container row h-100 m-auto">
+          <div
+            class="col-lg-6 hero-content gap-2 d-flex flex-column align-items-start justify-content-center"
+          >
+            <h2>
+              New Summer <br />
+              <strong>Shoes Collection</strong>
+            </h2>
+            <p class="fs-5">
+              Competently expedite alternative benefits whereas leading-edge
+              catalysts for change. Globally leverage existing an expanded array
+              of leadership.
+            </p>
+            <button style="border: 1px solid #135D84;" class="btn  btn-lg">SHOP NOW</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+ 
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section py-4" data-aos="fade-up" data-aos-duration="3000"  id="about">
+      <div class="about-section-content">
+        <div class="container row m-auto gap-4">
+          <div
+            class="col-lg-4 bg1 d-flex flex-column justify-content-between align-items-center p-3 ms-lg-4"
+          >
+            <h5>MEN'S COLLECTIONS</h5>
+            <button class="btn btn-outline-dark btn-lg">Explore All</button>
+          </div>
+          <div
+            class="col-lg-3 bg2 d-flex flex-column justify-content-between align-items-center p-3"
+          >
+            <h5>WOMEN'S COLLECTIONS</h5>
+            <button class="btn btn-outline-dark btn-lg">Explore All</button>
+          </div>
+          <div
+            class="col-lg-4 bg3 d-flex flex-column justify-content-between align-items-center p-3"
+          >
+            <h5>SPORT'S COLLECTIONS</h5>
+            <button class="btn btn-outline-dark btn-lg">Explore All</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEST SELLING SECTION -->
+    <section class="best-selling-section py-4" data-aos="fade-up" data-aos-duration="3000">
+      <div class="best-selling text-center">
+        <h3 style="color: #135D84;" class="">Best Selling Products</h3>
+        <ul
+          class="d-flex flex-wrap align-items-center justify-content-center gap-lg-4 gap-1 fs-lg-5 pt-3 ps-0"
+        >
+          <li>
+            <a style="background: #135D84; border: 1px solid #135D84;"
+          class="  text-light rounded-2 p-lg-2 p-1 px-lg-3 px-2"
+              href="#"
+              >All</a
+            >
+          </li>
+          <li>
+            <a
+            style="border: 1px solid #135D84;"  class=" rounded-2 p-lg-2 p-1 px-lg-3 px-2"
+              href="#"
+              >Nike</a
+            >
+          </li>
+          <li>
+            <a
+            style="border: 1px solid #135D84;"  class=" rounded-2 p-lg-2 p-1 px-lg-3 px-2"
+              href="#"
+              >Adidas</a
+            >
+          </li>
+          <li>
+            <a
+            style="border: 1px solid #135D84;"  class=" rounded-2 p-lg-2 p-1 px-lg-3 px-2"
+              href="#"
+              >Puma</a
+            >
+          </li>
+          <li>
+            <a
+            style="border: 1px solid #135D84;"  class=" rounded-2 p-lg-2 p-1 px-lg-3 px-2"
+              href="#"
+              >Bata</a
+            >
+          </li>
+          <li>
+            <a
+            style="border: 1px solid #135D84;"  class=" rounded-2 p-lg-2 p-1 px-lg-3 px-2"
+              href="#"
+              >Apex</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="best-selling-content">
+        <div class="row m-auto container py-4" data-aos="fade-up" data-aos-duration="3000">
+          <div class="col-lg-3 bestSelling">
+            <div class="best-selling-image bg-1 h-75"></div>
+
+            <div class="bestSellingContent text-center pt-3">
+              <p class="m-0">Men/Women</p>
+              <h5>
+                <a style="color: #135D84;" class="" href="/addtocart.html"
+                  >Running Sneakers Shoe</a
+                >
+              </h5>
+              <p style="color: #135D84;" class="">$170.85</p>
+            </div>
+          </div>
+          <div class="col-lg-3 bestSelling">
+            <div class="best-selling-image bg-2 h-75"></div>
+            <div class="bestSellingContent text-center pt-3">
+              <p class="m-0">Men/Sport</p>
+              <h5>
+                <a style="color: #135D84;" class="" href="/addtocart.html"
+                  >Leather Men Slippers</a
+                >
+              </h5>
+              <p style="color: #135D84;" class="">$190.85</p>
+            </div>
+          </div>
+          <div class="col-lg-3 bestSelling">
+            <div class="best-selling-image bg-3 h-75"></div>
+            <div class="bestSellingContent text-center pt-3">
+              <p class="m-0">Men/Women</p>
+              <h5>
+                <a style="color: #135D84;" class="" href="/addtocart.html"
+                  >Simple Fabric Shoe</a
+                >
+              </h5>
+              <p style="color: #135D84;" class="">$150.85</p>
+            </div>
+          </div>
+          <div class="col-lg-3 bestSelling">
+            <div class="best-selling-image bg-4 h-75"></div>
+            <div class="bestSellingContent text-center pt-3">
+              <p class="m-0">Men/Sport</p>
+              <h5>
+                <a style="color: #135D84;" class="" href="/addtocart.html"
+                  >Air Jordan 7 Retro</a
+                >
+              </h5>
+              <p style="color: #135D84;" class="">$150.85</p>
+            </div>
+          </div>
+          <div class="col-lg-3 bestSelling pt-3">
+            <div class="best-selling-image bg-5 h-75"></div>
+            <div class="bestSellingContent text-center pt-3">
+              <p class="m-0">Men/Women</p>
+              <h5>
+                <a style="color: #135D84;" class="" href="/addtocart.html"
+                  >Nike Air Max 270 SE</a
+                >
+              </h5>
+              <p style="color: #135D84;" class="">$120.85</p>
+            </div>
+          </div>
+          <div class="col-lg-3 bestSelling pt-3">
+            <div class="best-selling-image bg-6 h-75"></div>
+            <div class="bestSellingContent text-center pt-3">
+              <p class="m-0">Men/Women</p>
+              <h5>
+                <a style="color: #135D84;" class="" href="/addtocart.html"
+                  >Adidas Sneakers Shoes</a
+                >
+              </h5>
+              <p style="color: #135D84;" class="">$100.85</p>
+            </div>
+          </div>
+          <div class="col-lg-3 bestSelling pt-3">
+            <div class="best-selling-image bg-7 h-75"></div>
+            <div class="bestSellingContent text-center pt-3">
+              <p class="m-0">Men/Sport</p>
+              <h5>
+                <a style="color: #135D84;" class="" href="/addtocart.html"
+                  >Nike Basketballs Shoes</a
+                >
+              </h5>
+              <p style="color: #135D84;" class="">$120.85</p>
+            </div>
+          </div>
+          <div class="col-lg-3 bestSelling pt-3">
+            <div class="best-selling-image bg-8 h-75"></div>
+            <div class="bestSellingContent text-center pt-3">
+              <p class="m-0">Men/Women</p>
+              <h5>
+                <a style="color: #135D84;" class="" href="/addtocart.html"
+                  >Nike Basketballs Shoes</a
+                >
+              </h5>
+              <p style="color: #135D84;" class="">$120.85</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIFF SHOES -->
+    <section class="diff-shoe-section py-4" data-aos="fade-up" data-aos-duration="3000">
+      <div class="container m-auto">
+        <div class="row">
+          <div class="col-lg-6 sh-1 p-5 border border-light border-3">
+            <div
+              class="diff-content container d-flex flex-column align-items-start gap-3 text-light"
+            >
+              <h5>Adidas Shoe</h5>
+              <h2>
+                The Summer Sale <br />
+                Off 50%
+              </h2>
+              <a href="/addtocart.html"
+                ><button class="btn btn-outline-light">Shop Now</button></a
+              >
+            </div>
+          </div>
+          <div class="col-lg-6 sh-2 p-5 border border-light border-3">
+            <div
+              class="diff-content container d-flex flex-column align-items-start gap-3 text-light"
+            >
+              <h5>Nike Shoe</h5>
+              <h2>Make Yourself <br />Keep Sporty</h2>
+              <a href="/addtocart.html"
+                ><button class="btn btn-outline-light">Shop Now</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NIKE SPECIAL -->
+    <section class="nike-special-section py-4" data-aos="fade-up" data-aos-duration="3000">
+      <div class="container">
+        <div class="row m-auto">
+          <div class="col-lg-3 sp-1">
+            <div
+              class="special-content h-100 d-flex flex-column align-items-center justify-content-between text-light p-4"
+            >
+              <h4>New Trend Edition</h4>
+              <button class="btn spe text-light btn-lg">Explore Now</button>
+            </div>
+          </div>
+          <div class="col-lg-9 row m-auto">
+            <div class="d-flex justify-content-between align-items-center">
+              <h3>Nike Special</h3>
+              <div class="line"></div>
+            </div>
+            <div class="col-lg-4 special  mt-5">
+              <div class="sp-2 h-75"></div>
+              <div class="bestSellingContent text-center pt-3">
+                <p class="m-0">Men/Sport</p>
+                <h5>
+                  <a style="color: #135D84;" class="" href="/addtocart.html"
+                    >Air Jordan 7 Retro</a
+                  >
+                </h5>
+                <p style="color: #135D84;" class="">$150.85</p>
+              </div>
+
+            </div>
+            <div class="col-lg-4 special  mt-5">
+              <div class="sp-3 h-75"></div>
+              <div class="bestSellingContent text-center pt-3">
+                <p class="m-0">Men/Sport</p>
+                <h5>
+                  <a style="color: #135D84;" class="" href="/addtocart.html"
+                    >Nike Air Max 270 SE</a
+                  >
+                </h5>
+                <p style="color: #135D84;" class="">$150.85</p>
+              </div>
+
+            </div>
+            <div class="col-lg-4 special  mt-5">
+              <div class="sp-4 h-75"></div>
+              <div class="bestSellingContent text-center pt-3">
+                <p class="m-0">Men/Sport</p>
+                <h5>
+                  <a style="color: #135D84;" class="" href="/addtocart.html"
+                    >Nike Basketballs Shoes</a
+                  >
+                </h5>
+                <p style="color: #135D84;" class="">$120.85</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services-section py-4" data-aos="fade-up" data-aos-duration="3000">
+      <div class="container py-4">
+        <div class="row py-4 m-auto gap-lg-0 gap-3 align-items-center">
+          <div class="col-lg-3  d-flex align-items-center justify-content-evenly">
+            <div style="background: #135D84;" class="service-image d-flex align-items-center justify-content-center  border ">
+              <i class="fa-solid fa-truck-fast text-light fs-3"></i>
+            </div>
+            <div class="service-description">
+              <h5>FREE SHIPPING</h5>
+              <p>All Orders Over <span style="color: #135D84;" class="">$150</span></p>
+            </div>
+          </div>
+          <div class="col-lg-3  d-flex align-items-center justify-content-evenly">
+            <div style="background: #135D84;" class="service-image d-flex align-items-center justify-content-center  border ">
+              <i class="fa-solid fa-credit-card fs-3 text-light"></i>            
+            </div>
+            <div class="service-description">
+              <h5>QUICK PAYMENT</h5>
+              <p>100% Secure payment</p>
+            </div>
+          </div>
+          <div class="col-lg-3  d-flex align-items-center justify-content-evenly">
+            <div style="background: #135D84;" class="service-image d-flex align-items-center justify-content-center  border ">
+              <i class="fa-solid fa-boxes-packing fs-3 text-light"></i>   
+            </div>
+            <div class="service-description">
+              <h5>FREE RETURNS</h5>
+              <p>Money Back in 30 days</p>
+            </div>
+          </div>
+          <div class="col-lg-3  d-flex align-items-center justify-content-evenly">
+            <div style="background: #135D84;" class="service-image d-flex align-items-center justify-content-center  border ">
+              <i class="fa-solid fa-phone fs-3 text-light"></i>
+                    </div>
+            <div class="service-description">
+              <h5>24/7 SUPPORT</h5>
+              <p>Get quick Support</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSTAPOST -->
+    <section class="blog-section py-4 bg-light" data-aos="fade-up" data-aos-duration="3000">
+      <div class="container m-auto">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide insta-post-item">
+              <img src="/images/insta-1.jpg" alt="">
+              <a href="#" class="insta-post-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/insta-2.jpg" alt="">
+              <a href="#" class="insta-post-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/insta-3.jpg" alt="">
+              <a href="#" class="insta-post-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/insta-5.jpg" alt="">
+              <a href="#" class="insta-post-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/insta-6.jpg" alt="">
+              <a href="#" class="insta-post-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/insta-7.jpg" alt="">
+              <a href="#" class="insta-post-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/insta-8.jpg" alt="">
+              <a href="#" class="insta-post-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer style="background: #135D84;" class="py-4  text-light" id="contact" data-aos="fade-up" data-aos-duration="3000">
+      <div class="container">
+        <div class="foot-header d-flex justify-content-between align-items-center">
+          <h1>RUSH</h1>
+          <div class="link p-2  d-flex gap-2">
+            <i class="fa-brands fa-facebook text-dark p-2 fs-3 bg-light"></i>
+            <i class="fa-brands fa-twitter fs-3 p-2 text-dark bg-light"></i>
+            <i class="fa-brands fa-linkedin fs-3 p-2 text-dark bg-light"></i>
+            <i class="fa-brands fa-pinterest fs-3 p-2 text-dark bg-light"></i>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-lg-3  ">
+            <ul class="d-flex flex-column gap-">
+              <h4>Contact Us</h4>
+              <div class="line w-25 "></div>
+              <br>
+              <li title="call" class="d-flex align-items-start  ms-3 ">
+                <i class="fa-solid fa-phone fs-5 text-light"></i>
+                <p><a href="tel:+2348148462822" class=" text-light">+2348148462822</a></p>
+              </li>
+              <li title="mail" class="d-flex align-items-start  ms-3">
+                <i class="fa-solid fa-envelope fs-4 text-light"></i>
+                <p><a href="mailto:hamzatrukayatabiodun02@gmail.com " class=" text-light ">hamzatrukayat4846 <br>@gmail.com</a></p>
+              </li>
+              <li title="location" class="d-flex align-items-start  ms-3">
+                <i class="fa-solid fa-location fs-4 text-light"></i>
+                <p><a class=" text-light" href="#">Oyo State,Nigeria</a></p>
+                
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 ">
+            <ul class="d-flex flex-column ">
+              <h4>My Address</h4>
+              <div class="line w-25 "></div>
+              <br>
+              <li class="py-1"><a class="text-light" href="#">My account</a></li>
+              <li class="py-1"><a class="text-light" href="#">Wish List</a></li>
+
+              <li class="py-1"><a class="text-light" href="#">View Cart</a></li>
+             
+              <li class="py-1"><a class="text-light" href="#">Compare</a></li>
+
+              <li class="py-1"><a class="text-light" href="#">New product</a></li>
+             
+            
+            </ul>
+          </div>
+          <div class="col-lg-3 ">
+            <ul class="d-flex flex-column ">
+              <h4>Opening Time</h4>
+              <div class="line w-25 "></div>
+              <br>
+              <li class="d-flex gap-4">
+                <p>Mon-Tue</p>
+                <p>8AM - 10PM</p>
+              </li>
+              <li class="d-flex gap-4">
+                <p>Wed</p>
+                <p>8AM - 7PM</p>
+              </li>
+
+              <li class="d-flex gap-4">
+                <p>Fri</p>
+                <p>7AM - 12PM</p>
+              </li>
+
+              <li class="d-flex gap-4">
+                <p>sat</p>
+                <p>9AM - 3PM</p>
+              </li>
+             
+            
+            </ul>
+          </div>
+          <div class="col-lg-4 ">
+            <ul class="d-flex flex-column ">
+              <h4>Newsletter</h4>
+              <div class="line w-25 "></div>
+              <br>
+              <p>Subscribe to our get notify on new products and designs</p>
+
+              <form action="">
+                <input class="py-2 px-0 px-lg-4" type="email" name="email" id="" placeholder="Enter your Email">
+                <button  class="btn btn-outline-light">Subscribe</button>
+              </form>
+             
+            
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="text-center text-dark ">
+          <p>&copy;2024 <a  class="text-light" href="https://github.com/bossLady0001">bossLady0001</a>All Right Reserved</p>
+        </div>
+      
+      </div>
+      
+    </footer>
+
+
+
+
+      <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      watchSlidesProgress: true,
+      slidesPerView: 3,
+    });
+  </script>
+  <!-- AOS INITIALIZE -->
+  <script>
+    AOS.init();
+  </script>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
