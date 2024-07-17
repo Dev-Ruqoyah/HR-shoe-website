@@ -12,7 +12,9 @@ var button1 = document.createElement('button');
 var button2 = document.createElement('button');
 const addedNotification = document.querySelector('.added-notification')
 let totalPrice = 0;
-
+if(!addToCartButtons){
+    modalBody.innerHTML = "You have not add any product"
+}
 
 //  Details of the product
 
